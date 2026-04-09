@@ -61,8 +61,9 @@ a{
 } 
 
 .link-arrow::after{
-    content: '-->';
+    content: '-->'; 
     margin-left: 5px;
+    transition: margin 0.15s;
 }
 
 .link-arrow:hover::after{
@@ -74,6 +75,34 @@ a{
     }
 }
 
+/*badges*/
+.badge{
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 2rem;
+}
 
+.badge--primary{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.badge--secondary{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.badge--small{
+    font-size: 1.6rem;
+}
+@media screen and (min-width:1024px){
+.badge{
+    font-size: 1.5rem;
+}
+.badge--small{
+    font-size: 1.2rem;
+}
+}
 
 
