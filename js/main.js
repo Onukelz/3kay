@@ -4,3 +4,5 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible--expanded");
   })
 );
+// Initialize Animate on Scroll
+AOS.init();
